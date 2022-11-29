@@ -32,6 +32,3 @@ else
 {
     Console.WriteLine("Неправильное число");
 }
-
-/*if ((numS[0]==numS[4]) && (numS[1]==numS[3]))
-    Console.WriteLine("Число - полиндром");*/
