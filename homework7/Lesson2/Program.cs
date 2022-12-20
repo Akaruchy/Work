@@ -24,17 +24,14 @@ for (int i = 0; i < array.GetLength(0); i++)
 }
 
 Console.WriteLine("Введите координаты искомого элемента:");
+Console.WriteLine("Позиция в строке:");
+int x = int.Parse(Console.ReadLine());
+Console.WriteLine("Позиция в столбце:");
+int y = int.Parse(Console.ReadLine());
+if ((x > row) || (y > column))
+    Console.WriteLine("такого числа нет");
+else
 {
-    Console.WriteLine("Позиция в строке:");
-    int x = int.Parse(Console.ReadLine());
-    Console.WriteLine("Позиция в столбце:");
-    int y = int.Parse(Console.ReadLine());
-    if ((x > row) || (y > column))
-        Console.WriteLine("такого числа нет");
-    else
-    {
-        int coordinates = array[x, y];
-        Console.WriteLine(coordinates);
-    }
+    int coordinates = array[x, y];
+    Console.WriteLine(coordinates);
 }
-
